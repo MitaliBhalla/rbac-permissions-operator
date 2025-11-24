@@ -34,9 +34,6 @@ spec:
   - name: git-auth
     secret:
       secretName: '{{ git_auth_secret }}'
-  - name: netrc
-    secret:
-      secretName: '{{ git_auth_secret }}'
   pipelineRef:
     resolver: git
     params:
